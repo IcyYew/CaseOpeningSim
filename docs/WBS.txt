@@ -83,9 +83,9 @@ CaseOpeningSim WBS
 	
 4.0 Data Analysis
 	4.1 ROI Calculation [TODO]
-		4.1.1 Compute EV per opening from case definition [TODO]
+		4.1.1 Compute EV per opening from case definition [DONE]
 		4.1.2 Compute experienced ROI from simulation results [TODO]
-	4.2 Statistical Summary (mean, variance, profit margin)
+	4.2 Statistical Summary (mean, variance, profit margin) [TODO]
 		4.2.1 Track per-run results needed for mean/variance [TODO]
 		4.2.2 Implement calculation of mean, variance, standard deviation [TODO]
 		4.2.3 Compute profit margin vs case cost [TODO]
