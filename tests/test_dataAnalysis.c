@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "dataAnalysis.h"
-#include "case.h"
+#include "../dataAnalysis.h"
+#include "../case.h"
 
 int main(void) {
 	CaseItem items[] = {
