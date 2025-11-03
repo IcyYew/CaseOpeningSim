@@ -49,5 +49,9 @@ Graphs and stuff here
 ---
 
 
+## WBS
+[WBS](docs/WBS.txt)
+
+
 ## Licensing
 Free use! Public domain!
