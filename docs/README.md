@@ -50,7 +50,7 @@ Graphs and stuff here
 
 
 ## WBS
-[WBS](docs/WBS.txt)
+[WBS](WBS.txt)
 
 
 ## Licensing
