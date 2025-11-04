@@ -4,6 +4,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
+#include "fileUtils.h"
+#include "miscUtils.h"
 
 int readIntInRange(const char* prompt, int min, int max);
 char* validCSVFileName(const char* prompt);

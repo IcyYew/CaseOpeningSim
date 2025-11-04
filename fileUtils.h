@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <unistd.h>
 bool fileExists(const char* fileName);
 
 bool readFromFile(const char* fileName, int numCases);

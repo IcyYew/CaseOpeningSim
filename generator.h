@@ -1,6 +1,9 @@
 #ifndef GENERATOR_H
 #define GENERATOR_H
 #include <stdint.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <Wincrypt.h>
 
 // Initialize PRNG
 // Seed xoshiro256++ with Wincrypt
@@ -13,5 +16,4 @@ uint64_t genNext(void);
 // random int in [0, max-1]
 int genNextInRange(int max);
 
-#endif
 #endif

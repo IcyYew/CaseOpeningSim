@@ -1,7 +1,3 @@
-#include <stdlib.h>
-#include <windows.h>
-#include <Wincrypt.h>
-#include <stdint.h>
 #include "generator.h"
 /*
 *	USING IMPLEMENTATION OF xoshiro256++ PRNG WITH Wincrypt SEEDING.
@@ -42,18 +38,18 @@ int genInit(void) {
 		errorHandler("acquire CSP");
 		return 0;
 	}
-	if (!CryptGenRandom(g_hCryptProv, sizeof(buffer), (BYTE*)&buffer)) {
+	if (!CryptGenRandom(hProv, sizeof(buffer), (BYTE*)&buffer)) {
 		errorHandler("generate random seed");
 		// fallback to prevent sim crash
-		value = GetTickCount();
+		buffer = GetTickCount();
 	}
 	CryptReleaseContext(hProv, 0);
 	
 	// copy buffer into state
 	for (int i = 0; i < 4; ++i) {
-		uint_t v = 0;
+		uint64_t v = 0;
 		// interpret 8 bytes as little-endian 64 bit
-		for (int k = 0; k < 8; ++b) {
+		for (int b = 0; k < 8; ++b) {
 			v |= ((uint64_t)buffer[i * 8 + b]) << (8 * b);
 		}
 		s[i] = v;

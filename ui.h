@@ -4,10 +4,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include "validation.h"
+#include "fileUtils.h"
 
 int modeSelectUIRunner(void);
 
 void shutdownUIRunner(const char* errorMsg);
+void niceShutdownUIRunner();
 
 void simulationUIRunner(void);
 

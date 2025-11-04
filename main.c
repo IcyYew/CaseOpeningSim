@@ -6,18 +6,23 @@
 
 int main() {
 	int modeSelect = modeSelectUIRunner();
-	switch(modeSelect) {
-		case 1:
-			simulationUIRunner();
-			break;
-		case 2:
-			caseImportUIRunner();
-			break;
-		case 3:
-			statisticsUIRunner();
-			break;
-		default:
-			printf("should never reach\n");
-			break;
+	while(1) {
+		switch(modeSelect) {
+			case 1:
+				simulationUIRunner();
+				break;
+			case 2:
+				caseImportUIRunner();
+				break;
+			case 3:
+				statisticsUIRunner();
+				break;
+			case 4:
+				niceShutdownUIRunner();
+			default:
+				// never reached
+				break;
+		}
+		modeSelect = modeSelectUIRunner();
 	}
 }
