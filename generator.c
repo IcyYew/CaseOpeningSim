@@ -34,7 +34,7 @@ static void errorHandler(const char* errorType) {
 	printf("Failed to %s.\nError Num: %x\n", errorType, GetLastError());
 }
 
-int initGen(void) {
+int genInit(void) {
 	HCRYPTPROV hProv;
 	BYTE buffer[32];
 	// get context for seeding
@@ -76,7 +76,7 @@ void genCleanup(void) {
 uint64_t genNext(void) {
 	return xoshiro256pp();
 }
-int rng_next_in_range(int max) {
+int genNextInRange(int max) {
 	if (max <= 0) {
 		return 0;
 	}

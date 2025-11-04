@@ -1,9 +1,8 @@
+#ifndef CASE_H
+#define CASE_H
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
-#ifndef CASE_H
-#define CASE_H
-
 
 // Struct for each item in a case
 typedef struct {
