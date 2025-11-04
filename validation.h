@@ -10,5 +10,7 @@
 
 int readIntInRange(const char* prompt, int min, int max);
 char* validCSVFileName(const char* prompt);
+char* validInputCaseInfo(const char* prompt);
+char* validInputCaseItem(const char* prompt);
 
 #endif

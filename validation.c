@@ -53,3 +53,9 @@ char* validCSVFileName(const char* prompt) {
 		}
 	}
 }
+/*
+Implement these two later
+*/
+char* validInputCaseInfo(const char* prompt) {
+}
+char* validInputCaseItem(const char* prompt);

@@ -9,7 +9,7 @@ bool fileExists(const char* fileName) {
 	}
 }
 
-bool readFromFile(const char* fileName, int numCases, CaseDef** outCases) {
+bool readFromFile(const char* fileName, int numCases) {
 	FILE* fP;
 	char buffer[256];
 	fP = fopen(fileName, "r");

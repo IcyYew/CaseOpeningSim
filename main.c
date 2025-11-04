@@ -8,6 +8,8 @@ int main() {
 	int modeSelect = modeSelectUIRunner();
 	while(1) {
 		switch(modeSelect) {
+			case(0):
+				niceShutdownUIRunner();
 			case 1:
 				simulationUIRunner();
 				break;
@@ -18,7 +20,7 @@ int main() {
 				statisticsUIRunner();
 				break;
 			case 4:
-				niceShutdownUIRunner();
+				userInputCaseUIRunner();
 			default:
 				// never reached
 				break;

@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include "validation.h"
 #include "fileUtils.h"
+#include "dataAnalysis.h"
+#include "miscUtils.h"
 
 int modeSelectUIRunner(void);
 
@@ -15,6 +17,7 @@ void niceShutdownUIRunner();
 void simulationUIRunner(void);
 
 void caseImportUIRunner(void);
+void userInputCaseUIRunner(void);
 
 void statisticsUIRunner(void);
 
