@@ -11,10 +11,10 @@ int main() {
 			simulationUIRunner();
 			break;
 		case 2:
-			printf("Call UI module for importing case\n");
+			caseImportUIRunner();
 			break;
 		case 3:
-			printf("Call UI module for statistics\n");
+			statisticsUIRunner();
 			break;
 		default:
 			printf("should never reach\n");
