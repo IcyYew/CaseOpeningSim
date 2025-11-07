@@ -60,12 +60,12 @@ CaseOpeningSim WBS
 		2.3.4 (Probably not going to bother) Implement case modification [TODO?]
 		2.3.5 Implement duplicate case / already existing similar case detection [TODO]
 			2.3.5.1 Normalize new case [TODO]
-			2.3.5.2 Compare against existing cases
-			2.3.5.3 Define policy, ask user to drop addition or replace existing case
+			2.3.5.2 Compare against existing cases [TODO]
+			2.3.5.3 Define policy, ask user to drop addition or replace existing case [TODO]
 	2.4 Interactive Case Creation (Prompting User) [TODO]
-		2.4.1 Prompt user for case cost and name [TODO]
-		2.4.2 Prompt user for item list (name,odds,value) [TODO]
-		2.4.3 Validate and normalize user-entered case [TODO]
+		2.4.1 Prompt user for case cost and name [DONE]
+		2.4.2 Prompt user for item list (name,odds,value) [DONE]
+		2.4.3 Validate and normalize user-entered case [DONE]
 		2.4.4 Save case to local "database" [TODO]
 
 3.0 User Interface
