@@ -66,6 +66,7 @@ void userInputCaseUIRunner(void) {
 		}
 	}
 	// ADD TO DATABASE, EVENTUALLY
+	writeToFile(&c, "csvs/csv_ignore/cases.csv", "a");
 	printf("\nCase '%s' loaded with %zu items. Cost: %.2f\n", c.name, c.itemCount, c.cost);
 	double caseEV = calculateEV(&c);
 	printf("Case EV: %.2f\nCase ROI: %.2f\n", caseEV, calculateTheoreticalROI(c.cost, caseEV));

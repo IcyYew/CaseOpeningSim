@@ -6,6 +6,28 @@ void stdinConsumer(void) {
 	while ((c = getchar()) != '\n' && c != EOF) {}
 }
 
+int caseStringify(CaseDef* c, char* out, size_t outSize) {
+	char stringified[256];
+	if (!c || !out || outSize == 0) {
+		return 0;
+	}
+	size_t used = 0;
+	int written = snprintf(out, outSize, "%s,%.2f,%zu", c->name, c->cost, c->itemCount);
+	if (written < 0 || (size_t)written >= outSize) {
+		return 0;
+	}
+	used = (size_t)written;
+	for (size_t i = 0; i < c->itemCount; ++i) {
+		const CaseItem* it = &c->items[i];
+		written = snprintf(out + used, outSize - used, ",%s,%.6f,%.2f", it->name, it->probability, it->value);
+		if (written < 0 || (size_t)written >= outSize - used) {
+			return 0;
+		}
+		used += (size_t)written;
+	}
+	return 1;
+}
+
 
 int parseCaseInfo(char* caseInfo, CaseDef *out) {
 	char* tok = strtok(caseInfo, ",");

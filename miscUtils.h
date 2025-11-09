@@ -9,4 +9,5 @@ void stdinConsumer(void);
 
 int parseCaseInfo(char* caseInfo, CaseDef *out);
 int parseCaseItem(char* itemInfo, CaseItem *out);
+int caseStringify(CaseDef* c, char* out, size_t outSize);
 #endif

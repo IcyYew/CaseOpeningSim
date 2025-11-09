@@ -6,6 +6,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include "miscUtils.h"
+#include "case.h"
 bool fileExists(const char* fileName);
 
 bool readFromFile(const char* fileName, int numCases);
@@ -13,6 +15,6 @@ bool readFromFile(const char* fileName, int numCases);
 // Supported modes:
 // w: if file exists, overwrite, if file doesnt exist, create new
 // a: if file opens, opens in append mode, if file doesnt exist new file made.
-bool writeToFile(const char* fileName, const char* mode);
+bool writeToFile(CaseDef* c, const char* fileName, const char* mode);
 
 #endif
