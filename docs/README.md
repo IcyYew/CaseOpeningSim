@@ -1,3 +1,5 @@
+# DEAD PROJECT!!
+
 # CaseOpeningSim
 Simulating ROI and profit margins for CS2 case openings, with a focus on modeling how profitable (or unprofitable :/) various cases on gambling sites are over large numbers of trials.
 
